@@ -238,7 +238,7 @@ OnTick(function (myHero)
                 end
 				
 		 if KayleMenu.LaneClear.W:Value() and Ready(_W)  then
-	        	CastSpell(_W,)
+	        	CastSpell(_W)
                 end
 
                 
