@@ -271,7 +271,7 @@ OnTick(function (myHero)
 		      CastSpell(_E)
 	  end
         end
-        if KayleMenu.AutoMode.R:Value() GetCurrentHP(myhero) < 250 then        
+        if KayleMenu.AutoMode.R:Value() and GetCurrentHP(myhero) < 250 then        
 	  if Ready(_R) then
 		      CastSpell(_R)
 	  end
