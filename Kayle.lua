@@ -157,7 +157,7 @@ OnTick(function (myHero)
             if KayleMenu.Combo.Q:Value() and Ready(_Q) and ValidTarget(target, 650) then
                 local QPred = GetPrediction(target,KayleQ)
                        if QPred.hitChance > (KayleMenu.Combo.Qpred:Value() * 0.1) then
-                                 CastSkillShot(_Q,QPred.castPos)
+                                 CastTargetSpell(target, _Q)
                        end
             end
             if KayleMenu.Combo.Tiamat:Value() and Tiamat > 0 and Ready(Tiamat) and ValidTarget(target, 350) then
