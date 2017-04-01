@@ -240,7 +240,7 @@ OnTick(function (myHero)
                 
 
                 if KayleMenu.LaneClear.E:Value() and Ready(_E) and ValidTarget(closeminion, 500) then
-	        	CastSkillShot(_E, target)
+	        	CastSpell(_E)
 	        end
 
                 if KayleMenu.LaneClear.Tiamat:Value() and ValidTarget(closeminion, 350) then
