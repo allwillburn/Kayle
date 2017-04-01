@@ -178,7 +178,7 @@ OnTick(function (myHero)
 			CastSpell(RHydra)
             end
             
-	    if KayleMenu.Combo.W:Value() and Ready(_W) and ValidTarget(target, 500) then
+	    if KayleMenu.Combo.W:Value() and Ready(_W)  then
 			CastSpell(_W)
 	    end
 	    
