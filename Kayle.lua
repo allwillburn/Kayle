@@ -121,7 +121,7 @@ OnTick(function (myHero)
             if KayleMenu.Harass.Q:Value() and Ready(_Q) and ValidTarget(target, 650) then
                 local QPred = GetPrediction(target,KayleQ)
                        if QPred.hitChance > (KayleMenu.Harass.Qpred:Value() * 0.1) then
-                                 CastSkillShot(_Q,QPred.castPos)
+                                 CastTargetSpell(target, _Q)
                        end
             end
             if KayleMenu.Harass.W:Value() and Ready(_W) and ValidTarget(target, 1000) then
