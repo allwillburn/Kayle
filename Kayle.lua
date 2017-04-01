@@ -188,7 +188,7 @@ OnTick(function (myHero)
 			CastSpell(_R)
             end
 
-            if KayleMenu.Combo.R:Value() and Ready(_R) and GetCurrentHP(myhero) < 250 and (EnemiesAround(myHeroPos(), 900) >= KayleMenu.Combo.RX:Value()) then
+            if KayleMenu.Combo.R:Value() and Ready(_R) and (EnemiesAround(myHeroPos(), 900) >= KayleMenu.Combo.RX:Value()) then
 			CastSpell(_R)
             end
 
@@ -271,7 +271,7 @@ OnTick(function (myHero)
 		      CastSpell(_E)
 	  end
         end
-        if KayleMenu.AutoMode.R:Value() and GetCurrentHP(myhero) < 250 then        
+        if KayleMenu.AutoMode.R:Value() then        
 	  if Ready(_R) then
 		      CastSpell(_R)
 	  end
