@@ -268,7 +268,7 @@ OnTick(function (myHero)
         end
         if KayleMenu.AutoMode.E:Value() then        
 	  if Ready(_E) and ValidTarget(target, 1000) then
-		      CastSpell(_E,)
+		      CastSpell(_E)
 	  end
         end
         if KayleMenu.AutoMode.R:Value() GetCurrentHP(myhero) < 250 then        
