@@ -89,11 +89,6 @@ KayleMenu:SubMenu("SkinChanger", "SkinChanger")
 KayleMenu.SkinChanger:Boolean("Skin", "UseSkinChanger", true)
 KayleMenu.SkinChanger:Slider("SelectedSkin", "Select A Skin:", 1, 0, 6, 1, function(SetDCP) HeroSkinChanger(myHero, SetDCP)  end, true)
 
-KayleMenu:SubMenu("", "")
-
-KayleMenu:SubMenu("", "")
-
-KayleMenu:SubMenu("Warning Using R in Combo May Get You Banned ", "Warning Using R in Combo May Get You Banned ")
 
 OnTick(function (myHero)
 	local target = GetCurrentTarget()
