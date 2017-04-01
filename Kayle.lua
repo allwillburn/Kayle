@@ -234,7 +234,11 @@ OnTick(function (myHero)
       if Mix:Mode() == "LaneClear" then
       	  for _,closeminion in pairs(minionManager.objects) do
 	        if KayleMenu.LaneClear.Q:Value() and Ready(_Q) and ValidTarget(closeminion, 650) then
-	        	CastSkillShot(_Q, closeminion)
+	        	CastTargetSpell(closeminion, _Q)
+                end
+				
+		 if KayleMenu.LaneClear.W:Value() and Ready(_W)  then
+	        	CastSpell(_W,)
                 end
 
                 
